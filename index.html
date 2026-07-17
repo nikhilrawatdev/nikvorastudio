@@ -3,8 +3,29 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta name="description" content="NikvoraStudio is a premium web design agency building high-performance, conversion-focused websites for modern businesses. Let's turn your visitors into customers.">
-  <title>NikvoraStudio | Premium Web Design & Development Agency</title>
+  <meta name="description" content="Professional web design and development agency. We create modern, conversion-focused websites that help businesses grow. Custom design, fast performance, and ongoing support.">
+  <meta name="keywords" content="web design, web development, website design agency, custom websites, conversion-focused design">
+  <meta name="author" content="NikvoraStudio">
+  <meta name="theme-color" content="#0B0B0B">
+  
+  <!-- Open Graph Tags -->
+  <meta property="og:type" content="website">
+  <meta property="og:title" content="NikvoraStudio | Professional Web Design & Development">
+  <meta property="og:description" content="Custom web design and development agency creating modern, high-performing websites.">
+  <meta property="og:url" content="https://nikvorastudio.com">
+  <meta property="og:site_name" content="NikvoraStudio">
+  
+  <!-- Twitter Card -->
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="NikvoraStudio | Professional Web Design & Development">
+  <meta name="twitter:description" content="Custom web design and development agency creating modern, high-performing websites.">
+  
+  <!-- Canonical Tag -->
+  <link rel="canonical" href="https://nikvorastudio.com">
+  
+  <!-- Favicon -->
+  <link rel="icon" href="/src/assets/logo.jpg" type="image/jpeg">
+  <link rel="apple-touch-icon" href="/src/assets/logo.jpg">
   
   <!-- Google Fonts -->
   <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -24,10 +45,10 @@
     <div class="scroll-progress-bar" id="scrollProgressBar"></div>
   </div>
 
-  <!-- 10. Floating Header / Navigation -->
+  <!-- Navigation Header -->
   <header class="main-header" id="mainHeader">
     <div class="header-container">
-      <a href="#" class="logo" id="logoLink">
+      <a href="#hero" class="logo" id="logoLink" title="NikvoraStudio Home">
         <img src="/src/assets/logo.jpg" alt="NikvoraStudio Logo" class="logo-img">
         Nikvora<span class="logo-accent">Studio</span>
       </a>
@@ -43,8 +64,8 @@
       </nav>
       
       <div class="header-cta">
-        <a href="#contact" class="btn btn-secondary btn-sm nav-cta-btn" id="headerCtaBtn">Book a Call</a>
-        <button class="mobile-menu-toggle" id="menuToggle" aria-label="Toggle Menu">
+        <a href="https://wa.me/916398490818?text=Hi%20NikvoraStudio,%20I'm%20interested%20in%20discussing%20a%20web%20project%20for%20my%20business." target="_blank" rel="noopener noreferrer" class="btn btn-secondary btn-sm nav-cta-btn" title="Start a conversation on WhatsApp">Get in Touch</a>
+        <button class="mobile-menu-toggle" id="menuToggle" aria-label="Toggle navigation menu">
           <span class="bar"></span>
           <span class="bar"></span>
           <span class="bar"></span>
@@ -54,7 +75,7 @@
   </header>
 
   <main>
-    <!-- 1. Hero Section -->
+    <!-- Hero Section -->
     <section class="hero-section" id="hero">
       <div class="hero-glow-container">
         <div class="glow-orb glow-orb-1"></div>
@@ -64,23 +85,23 @@
       <div class="container hero-container">
         <div class="hero-content">
           <div class="hero-tagline fade-in-up">
-            <span class="tagline-badge">Next-Gen Web Agency</span>
+            <span class="tagline-badge">Professional Web Agency</span>
           </div>
           <h1 class="hero-title fade-in-up delay-1">
-            Websites That Turn <span class="text-gradient">Visitors</span> Into <span class="text-gradient-accent">Customers</span>.
+            Modern Websites That <span class="text-gradient">Drive</span> Real <span class="text-gradient-accent">Results</span>.
           </h1>
           <p class="hero-subtitle fade-in-up delay-2">
-            We build premium, modern websites designed for speed, instant trust, and high conversions. Combining luxury startup aesthetics with hyper-optimized engineering.
+            We design and build professional websites that look great, load fast, and help your business attract more customers. Custom design, optimized performance, and dedicated support.
           </p>
           <div class="hero-actions fade-in-up delay-3">
-            <a href="#contact" class="btn btn-primary btn-lg" id="heroPrimaryCta">
-              Book Free Consultation
-              <svg class="btn-arrow" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+            <a href="https://wa.me/916398490818?text=Hi%20NikvoraStudio,%20I'd%20like%20to%20discuss%20a%20website%20project%20and%20get%20a%20consultation." target="_blank" rel="noopener noreferrer" class="btn btn-primary btn-lg" id="heroPrimaryCta" title="Start WhatsApp consultation">
+              Get Free Consultation
+              <svg class="btn-arrow" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
                 <line x1="5" y1="12" x2="19" y2="12"></line>
                 <polyline points="12 5 19 12 12 19"></polyline>
               </svg>
             </a>
-            <a href="#work" class="btn btn-link btn-lg" id="heroSecondaryCta">
+            <a href="#work" class="btn btn-link btn-lg" id="heroSecondaryCta" title="View our portfolio">
               View Our Work
               <span class="link-underline"></span>
             </a>
@@ -90,29 +111,29 @@
         <!-- Interactive Hero Visualization -->
         <div class="hero-visual fade-in-up delay-4">
           <div class="mockup-wrapper">
-            <!-- Glass cards floating behind / around -->
+            <!-- Floating Metrics Cards -->
             <div class="floating-card float-left" style="--float-delay: 0s; --float-duration: 6s;">
               <div class="floating-card-icon speed-icon">
-                <svg viewBox="0 0 24 24" fill="none" stroke="#4F7CFF" stroke-width="2">
+                <svg viewBox="0 0 24 24" fill="none" stroke="#4F7CFF" stroke-width="2" aria-hidden="true">
                   <path d="M13 2L3 14h9l-1 8 10-12h-9l1-8z"/>
                 </svg>
               </div>
               <div class="floating-card-info">
                 <span class="floating-card-title">Performance</span>
-                <span class="floating-card-val">99% Speed</span>
+                <span class="floating-card-val">Fast Loading</span>
               </div>
             </div>
             
             <div class="floating-card float-right" style="--float-delay: 2s; --float-duration: 7s;">
               <div class="floating-card-icon conv-icon">
-                <svg viewBox="0 0 24 24" fill="none" stroke="#10B981" stroke-width="2">
+                <svg viewBox="0 0 24 24" fill="none" stroke="#10B981" stroke-width="2" aria-hidden="true">
                   <path d="M22 11.08V12a10 10 0 1 1-5.93-9.14"/>
-                  <polyline points="22 4 12 14.01 9 11.01"/>
+                  <polyline points="22 4 12 14.01 9 11.01"></polyline>
                 </svg>
               </div>
               <div class="floating-card-info">
-                <span class="floating-card-title">Conversion</span>
-                <span class="floating-card-val">+148% Avg</span>
+                <span class="floating-card-title">Results-Focused</span>
+                <span class="floating-card-val">Conversion Ready</span>
               </div>
             </div>
 
@@ -123,10 +144,10 @@
                   <span class="dot yellow"></span>
                   <span class="dot green"></span>
                 </div>
-                <div class="browser-search">nikvorastudio.com/apex-analytics</div>
+                <div class="browser-search">Professional website example</div>
               </div>
               <div class="browser-body">
-                <!-- Concept SaaS Dashboard inside hero visual -->
+                <!-- Concept Dashboard Mockup -->
                 <div class="mini-dashboard">
                   <aside class="mini-sidebar">
                     <div class="mini-logo"></div>
@@ -150,7 +171,7 @@
                       </div>
                     </section>
                     <section class="mini-chart-card">
-                      <svg class="mini-chart" viewBox="0 0 100 40">
+                      <svg class="mini-chart" viewBox="0 0 100 40" aria-hidden="true">
                         <path d="M 0 35 Q 15 20, 30 25 T 60 10 T 90 5 T 100 0" fill="none" stroke="url(#miniChartGlow)" stroke-width="2"/>
                         <path d="M 0 35 Q 15 20, 30 25 T 60 10 T 90 5 T 100 0 L 100 40 L 0 40 Z" fill="url(#miniChartArea)" opacity="0.1"/>
                         <defs>
@@ -174,122 +195,122 @@
       </div>
     </section>
 
-    <!-- 2. Trust / Stats Section -->
+    <!-- Trust / Capabilities Section -->
     <section class="trust-section" id="trust">
       <div class="container">
         <div class="trust-grid">
           <!-- Card 1 -->
           <div class="trust-card reveal">
             <div class="trust-icon">
-              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" aria-hidden="true">
                 <circle cx="12" cy="12" r="10"></circle>
                 <polyline points="12 6 12 12 16 14"></polyline>
               </svg>
             </div>
-            <h3 class="trust-title">Fast Loading</h3>
-            <p class="trust-desc">Under 1-second page loads. We write clean, optimized code because speed equals sales.</p>
-            <div class="trust-stat">Sub-100ms TTI</div>
+            <h3 class="trust-title">Fast Performance</h3>
+            <p class="trust-desc">Clean, optimized code ensures your website loads quickly across all devices and connections.</p>
+            <div class="trust-stat">Speed Optimized</div>
           </div>
 
           <!-- Card 2 -->
           <div class="trust-card reveal">
             <div class="trust-icon">
-              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" aria-hidden="true">
                 <rect x="5" y="2" width="14" height="20" rx="2" ry="2"></rect>
                 <line x1="12" y1="18" x2="12.01" y2="18"></line>
               </svg>
             </div>
             <h3 class="trust-title">Mobile Optimized</h3>
-            <p class="trust-desc">Seamless experience across phones, tablets, and desktops. Designed touch-first.</p>
+            <p class="trust-desc">Responsive design that works seamlessly on phones, tablets, and desktops.</p>
             <div class="trust-stat">100% Responsive</div>
           </div>
 
           <!-- Card 3 -->
           <div class="trust-card reveal">
             <div class="trust-icon">
-              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" aria-hidden="true">
                 <circle cx="11" cy="11" r="8"></circle>
                 <line x1="21" y1="21" x2="16.65" y2="16.65"></line>
               </svg>
             </div>
             <h3 class="trust-title">SEO Ready</h3>
-            <p class="trust-desc">Built-in technical SEO foundations. Clean semantics that search engines absolutely love.</p>
-            <div class="trust-stat">Perfect Audits</div>
+            <p class="trust-desc">Built with proper structure and metadata to help your website rank in search results.</p>
+            <div class="trust-stat">Best Practices</div>
           </div>
 
           <!-- Card 4 -->
           <div class="trust-card reveal">
             <div class="trust-icon">
-              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" aria-hidden="true">
                 <line x1="18" y1="20" x2="18" y2="10"></line>
                 <line x1="12" y1="20" x2="12" y2="4"></line>
                 <line x1="6" y1="20" x2="6" y2="14"></line>
               </svg>
             </div>
             <h3 class="trust-title">Conversion Focused</h3>
-            <p class="trust-desc">Engineered around user psychology, clear hierarchy, and seamless booking flows.</p>
-            <div class="trust-stat">+4.8% Booking Rate</div>
+            <p class="trust-desc">Strategic design that encourages visitors to take action and contact you.</p>
+            <div class="trust-stat">Action-Oriented</div>
           </div>
 
           <!-- Card 5 -->
           <div class="trust-card reveal">
             <div class="trust-icon">
-              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" aria-hidden="true">
                 <circle cx="12" cy="12" r="10"></circle>
                 <path d="M12 2a14.5 14.5 0 0 0 0 20 14.5 14.5 0 0 0 0-20"></path>
                 <path d="M2 12h20"></path>
               </svg>
             </div>
-            <h3 class="trust-title">Worldwide Service</h3>
-            <p class="trust-desc">We serve companies globally, deployed via global edge CDNs for rapid global access.</p>
-            <div class="trust-stat">Global Servers</div>
+            <h3 class="trust-title">Accessible Design</h3>
+            <p class="trust-desc">Websites that are usable by everyone, including people with disabilities.</p>
+            <div class="trust-stat">WCAG Standards</div>
           </div>
 
           <!-- Card 6 -->
           <div class="trust-card reveal">
             <div class="trust-icon">
-              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" aria-hidden="true">
                 <path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"></path>
               </svg>
             </div>
-            <h3 class="trust-title">Modern Design</h3>
-            <p class="trust-desc">Award-winning, high-end styling inspired by Apple, Linear, and luxury startups.</p>
-            <div class="trust-stat">Pixel Perfect</div>
+            <h3 class="trust-title">Professional Design</h3>
+            <p class="trust-desc">Modern, clean aesthetic that reflects your brand and builds customer trust.</p>
+            <div class="trust-stat">Custom Design</div>
           </div>
         </div>
       </div>
     </section>
 
-    <!-- 3. Demo Projects Section -->
+    <!-- Portfolio / Demo Projects Section -->
     <section class="work-section" id="work">
       <div class="container">
         <div class="section-header text-center">
-          <span class="section-subtitle">Capabilities</span>
-          <h2 class="section-title">Demo Projects</h2>
-          <p class="section-desc">A selection of concept websites designed to demonstrate our design, development, and conversion-focused approach. These are self-initiated demo projects created to showcase our capabilities.</p>
+          <span class="section-subtitle">Portfolio</span>
+          <h2 class="section-title">Recent Projects</h2>
+          <p class="section-desc">Examples of websites we've designed and built for different industries and business types.</p>
         </div>
 
         <div class="demo-projects-grid">
           <!-- Project 1 -->
           <article class="glass-card demo-project-card reveal" data-spotlight>
             <div class="demo-project-image-wrapper">
-              <img src="/src/assets/stonebridge_construction.png" alt="StoneBridge Construction Preview" class="demo-project-img">
+              <img src="/src/assets/stonebridge_construction.png" alt="StoneBridge Construction website showcase" class="demo-project-img">
             </div>
             <div class="demo-project-info">
               <div class="demo-project-header">
-                <span class="demo-badge">Demo Project</span>
+                <span class="demo-badge">Portfolio</span>
                 <h3 class="demo-project-title">StoneBridge Construction</h3>
               </div>
-              <p class="demo-project-desc">Premium website for a construction company focused on generating leads and showcasing completed projects.</p>
+              <p class="demo-project-desc">Professional website for a construction company focused on generating quality leads and showcasing completed projects.</p>
               <div class="demo-tech-tags">
                 <span class="tech-tag">Astro</span>
                 <span class="tech-tag">Tailwind CSS</span>
                 <span class="tech-tag">Local SEO</span>
-                <span class="tech-tag">Lead Gen</span>
+                <span class="tech-tag">Lead Forms</span>
               </div>
-              <a href="#contact" class="btn btn-secondary btn-md demo-project-btn">
-                View Project
-                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" class="btn-arrow">
+              <a href="https://wa.me/916398490818?text=Hi%20NikvoraStudio,%20I'm%20interested%20in%20learning%20more%20about%20your%20web%20design%20services." class="btn btn-secondary btn-md demo-project-btn" title="Learn more about this project">
+                Get Started
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" class="btn-arrow" aria-hidden="true">
                   <line x1="5" y1="12" x2="19" y2="12"></line>
                   <polyline points="12 5 19 12 12 19"></polyline>
                 </svg>
@@ -300,23 +321,23 @@
           <!-- Project 2 -->
           <article class="glass-card demo-project-card reveal" data-spotlight>
             <div class="demo-project-image-wrapper">
-              <img src="/src/assets/luxe_dental_clinic.png" alt="Luxe Dental Clinic Preview" class="demo-project-img">
+              <img src="/src/assets/luxe_dental_clinic.png" alt="Luxe Dental Clinic website showcase" class="demo-project-img">
             </div>
             <div class="demo-project-info">
               <div class="demo-project-header">
-                <span class="demo-badge">Demo Project</span>
+                <span class="demo-badge">Portfolio</span>
                 <h3 class="demo-project-title">Luxe Dental Clinic</h3>
               </div>
-              <p class="demo-project-desc">Modern healthcare website designed for appointment bookings and building patient trust.</p>
+              <p class="demo-project-desc">Modern healthcare website designed for appointment bookings and building patient confidence and trust.</p>
               <div class="demo-tech-tags">
                 <span class="tech-tag">Next.js</span>
                 <span class="tech-tag">Framer Motion</span>
-                <span class="tech-tag">CSS Grid</span>
-                <span class="tech-tag">Booking UI</span>
+                <span class="tech-tag">Booking System</span>
+                <span class="tech-tag">Responsive</span>
               </div>
-              <a href="#contact" class="btn btn-secondary btn-md demo-project-btn">
-                View Project
-                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" class="btn-arrow">
+              <a href="https://wa.me/916398490818?text=Hi%20NikvoraStudio,%20I'm%20interested%20in%20learning%20more%20about%20your%20web%20design%20services." class="btn btn-secondary btn-md demo-project-btn" title="Learn more about this project">
+                Get Started
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" class="btn-arrow" aria-hidden="true">
                   <line x1="5" y1="12" x2="19" y2="12"></line>
                   <polyline points="12 5 19 12 12 19"></polyline>
                 </svg>
@@ -327,23 +348,23 @@
           <!-- Project 3 -->
           <article class="glass-card demo-project-card reveal" data-spotlight>
             <div class="demo-project-image-wrapper">
-              <img src="/src/assets/aurora_cafe.png" alt="Aurora Café Preview" class="demo-project-img">
+              <img src="/src/assets/aurora_cafe.png" alt="Aurora Café website showcase" class="demo-project-img">
             </div>
             <div class="demo-project-info">
               <div class="demo-project-header">
-                <span class="demo-badge">Demo Project</span>
+                <span class="demo-badge">Portfolio</span>
                 <h3 class="demo-project-title">Aurora Café</h3>
               </div>
-              <p class="demo-project-desc">Elegant café website featuring online reservations, menu showcase, and local SEO optimization.</p>
+              <p class="demo-project-desc">Elegant café website with online reservations, menu showcase, and local SEO optimization for better visibility.</p>
               <div class="demo-tech-tags">
                 <span class="tech-tag">HTML5</span>
-                <span class="tech-tag">Vanilla JS</span>
-                <span class="tech-tag">Flexbox</span>
+                <span class="tech-tag">CSS & JavaScript</span>
                 <span class="tech-tag">Reservations</span>
+                <span class="tech-tag">Local SEO</span>
               </div>
-              <a href="#contact" class="btn btn-secondary btn-md demo-project-btn">
-                View Project
-                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" class="btn-arrow">
+              <a href="https://wa.me/916398490818?text=Hi%20NikvoraStudio,%20I'm%20interested%20in%20learning%20more%20about%20your%20web%20design%20services." class="btn btn-secondary btn-md demo-project-btn" title="Learn more about this project">
+                Get Started
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" class="btn-arrow" aria-hidden="true">
                   <line x1="5" y1="12" x2="19" y2="12"></line>
                   <polyline points="12 5 19 12 12 19"></polyline>
                 </svg>
@@ -354,23 +375,23 @@
           <!-- Project 4 -->
           <article class="glass-card demo-project-card reveal" data-spotlight>
             <div class="demo-project-image-wrapper">
-              <img src="/src/assets/apex_fitness.png" alt="Apex Fitness Preview" class="demo-project-img">
+              <img src="/src/assets/apex_fitness.png" alt="Apex Fitness website showcase" class="demo-project-img">
             </div>
             <div class="demo-project-info">
               <div class="demo-project-header">
-                <span class="demo-badge">Demo Project</span>
+                <span class="demo-badge">Portfolio</span>
                 <h3 class="demo-project-title">Apex Fitness</h3>
               </div>
-              <p class="demo-project-desc">High-converting gym landing page with membership plans, trainer profiles, and call-to-action sections.</p>
+              <p class="demo-project-desc">Professional gym website with membership plans, trainer profiles, and clear calls-to-action for inquiries.</p>
               <div class="demo-tech-tags">
                 <span class="tech-tag">React</span>
                 <span class="tech-tag">Tailwind CSS</span>
-                <span class="tech-tag">Micro-Animations</span>
-                <span class="tech-tag">Pricing Table</span>
+                <span class="tech-tag">Animations</span>
+                <span class="tech-tag">Pricing Plans</span>
               </div>
-              <a href="#contact" class="btn btn-secondary btn-md demo-project-btn">
-                View Project
-                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" class="btn-arrow">
+              <a href="https://wa.me/916398490818?text=Hi%20NikvoraStudio,%20I'm%20interested%20in%20learning%20more%20about%20your%20web%20design%20services." class="btn btn-secondary btn-md demo-project-btn" title="Learn more about this project">
+                Get Started
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" class="btn-arrow" aria-hidden="true">
                   <line x1="5" y1="12" x2="19" y2="12"></line>
                   <polyline points="12 5 19 12 12 19"></polyline>
                 </svg>
@@ -381,33 +402,33 @@
       </div>
     </section>
 
-    <!-- 4. Services Section -->
+    <!-- Services Section -->
     <section class="services-section" id="services">
       <div class="container">
         <div class="section-header text-center">
-          <span class="section-subtitle">What We Do</span>
-          <h2 class="section-title">Tailored Agency Services</h2>
-          <p class="section-desc">We build digital experiences that represent your brand as a market leader. Every design is customized from scratch.</p>
+          <span class="section-subtitle">Services</span>
+          <h2 class="section-title">What We Offer</h2>
+          <p class="section-desc">A range of web services tailored to help your business succeed online.</p>
         </div>
 
         <div class="services-grid">
           <!-- Service 1 -->
           <div class="glass-card service-card reveal" data-spotlight>
             <div class="service-icon">
-              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" aria-hidden="true">
                 <polygon points="12 2 2 7 12 12 22 7 12 2"></polygon>
                 <polyline points="2 17 12 22 22 17"></polyline>
                 <polyline points="2 12 12 17 22 12"></polyline>
               </svg>
             </div>
             <h3 class="service-title">Website Design</h3>
-            <p class="service-desc">Unique design concepts reflecting your luxury brand identity. No pre-made templates, fully designed in Figma and handcrafted.</p>
+            <p class="service-desc">Custom website design tailored to your brand identity and business goals. Built from scratch without templates.</p>
           </div>
 
           <!-- Service 2 -->
           <div class="glass-card service-card reveal" data-spotlight>
             <div class="service-icon">
-              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" aria-hidden="true">
                 <path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"></path>
                 <polyline points="14 2 14 8 20 8"></polyline>
                 <line x1="16" y1="13" x2="8" y2="13"></line>
@@ -416,37 +437,37 @@
               </svg>
             </div>
             <h3 class="service-title">Landing Pages</h3>
-            <p class="service-desc">High-converting landing pages tailored to specific ad campaigns. Engineered to capture attention and convert visitors.</p>
+            <p class="service-desc">High-converting landing pages optimized to capture leads and drive specific actions from visitors.</p>
           </div>
 
           <!-- Service 3 -->
           <div class="glass-card service-card reveal" data-spotlight>
             <div class="service-icon">
-              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" aria-hidden="true">
                 <path d="M21.5 2v6h-6M21.34 15.57a10 10 0 1 1-.57-8.38l5.67-5.67"></path>
               </svg>
             </div>
             <h3 class="service-title">Website Redesign</h3>
-            <p class="service-desc">Transform your outdated site into a modern conversion machine. Keep your SEO ranking while upgrading your layout.</p>
+            <p class="service-desc">Modernize your existing website while maintaining SEO value and improving user experience.</p>
           </div>
 
           <!-- Service 4 -->
           <div class="glass-card service-card reveal" data-spotlight>
             <div class="service-icon">
-              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" aria-hidden="true">
                 <rect x="2" y="3" width="20" height="14" rx="2" ry="2"></rect>
                 <line x1="8" y1="21" x2="16" y2="21"></line>
                 <line x1="12" y1="17" x2="12" y2="21"></line>
               </svg>
             </div>
             <h3 class="service-title">Business Websites</h3>
-            <p class="service-desc">Web presence engineered for corporate and local firms. Incorporating call scheduling, live chat, and customer pathways.</p>
+            <p class="service-desc">Professional web presence for companies and service providers, designed to showcase expertise and attract clients.</p>
           </div>
 
           <!-- Service 5 -->
           <div class="glass-card service-card reveal" data-spotlight>
             <div class="service-icon">
-              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" aria-hidden="true">
                 <rect x="3" y="3" width="18" height="18" rx="2" ry="2"></rect>
                 <line x1="9" y1="3" x2="9" y2="21"></line>
                 <line x1="15" y1="3" x2="15" y2="21"></line>
@@ -455,56 +476,56 @@
               </svg>
             </div>
             <h3 class="service-title">Portfolio Websites</h3>
-            <p class="service-desc">Visual-rich, interactive portfolios built for creatives, designers, architects, and high-end services.</p>
+            <p class="service-desc">Showcase your work with beautiful portfolio websites designed for creatives and service professionals.</p>
           </div>
 
           <!-- Service 6 -->
           <div class="glass-card service-card reveal" data-spotlight>
             <div class="service-icon">
-              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" aria-hidden="true">
                 <path d="M21 16V8a2 2 0 0 0-1-1.73l-7-4a2 2 0 0 0-2 0l-7 4A2 2 0 0 0 3 8v8a2 2 0 0 0 1 1.73l7 4a2 2 0 0 0 2 0l7-4A2 2 0 0 0 21 16z"></path>
                 <polyline points="3.27 6.96 12 12.01 20.73 6.96"></polyline>
                 <line x1="12" y1="22.08" x2="12" y2="12"></line>
               </svg>
             </div>
-            <h3 class="service-title">AI Automation</h3>
-            <p class="service-desc">Integrate AI-driven chat widgets, dynamic lead routing, automated CRM hooks, and follow-up calendars.</p>
+            <h3 class="service-title">Website Maintenance</h3>
+            <p class="service-desc">Ongoing support including security updates, performance monitoring, and content management assistance.</p>
           </div>
 
           <!-- Service 7 -->
           <div class="glass-card service-card reveal" data-spotlight>
             <div class="service-icon">
-              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" aria-hidden="true">
                 <circle cx="12" cy="12" r="10"></circle>
                 <line x1="2" y1="12" x2="22" y2="12"></line>
                 <path d="M12 2a15.3 15.3 0 0 1 4 10 15.3 15.3 0 0 1-4 10 15.3 15.3 0 0 1-4-10 15.3 15.3 0 0 1 4-10z"></path>
               </svg>
             </div>
-            <h3 class="service-title">SEO Foundations</h3>
-            <p class="service-desc">Clean metadata structures, image compression, structured schema markup, and indexing scripts setup.</p>
+            <h3 class="service-title">SEO Optimization</h3>
+            <p class="service-desc">Proper structure, metadata, and best practices to help your website rank better in search results.</p>
           </div>
 
           <!-- Service 8 -->
           <div class="glass-card service-card reveal" data-spotlight>
             <div class="service-icon">
-              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" aria-hidden="true">
                 <path d="M14.7 6.3a1 1 0 0 0 0 1.4l1.6 1.6a1 1 0 0 0 1.4 0l3.77-3.77a6 6 0 0 1-7.94 7.94l-6.91 6.91a2.12 2.12 0 0 1-3-3l6.91-6.91a6 6 0 0 1 7.94-7.94l-3.76 3.76z"></path>
               </svg>
             </div>
-            <h3 class="service-title">Website Maintenance</h3>
-            <p class="service-desc">Monthly security patches, backup logs, content updates, speed health reports, and direct developer communication.</p>
+            <h3 class="service-title">Integrations</h3>
+            <p class="service-desc">Connect your website with tools you already use for email, CRM, analytics, and more.</p>
           </div>
         </div>
       </div>
     </section>
 
-    <!-- 5. Process Section -->
+    <!-- Process Section -->
     <section class="process-section" id="process">
       <div class="container">
         <div class="section-header text-center">
-          <span class="section-subtitle">Our Method</span>
-          <h2 class="section-title">The Development Journey</h2>
-          <p class="section-desc">A structured, high-visibility timeline built to keep your project on schedule and clear at every milestone.</p>
+          <span class="section-subtitle">Workflow</span>
+          <h2 class="section-title">Our Process</h2>
+          <p class="section-desc">A clear, collaborative approach to designing and building your website from start to finish.</p>
         </div>
 
         <div class="process-timeline-container">
@@ -519,8 +540,8 @@
                 <span class="step-num">01</span>
               </div>
               <div class="step-content glass-card" data-spotlight>
-                <h3 class="step-title">Discover</h3>
-                <p class="step-text">Deep-dive discovery session to align on your brand identity, business model, and concrete conversion targets.</p>
+                <h3 class="step-title">Discovery</h3>
+                <p class="step-text">We learn about your business, goals, and target audience to ensure the website serves your needs.</p>
                 <span class="step-duration">Week 1</span>
               </div>
             </div>
@@ -532,7 +553,7 @@
               </div>
               <div class="step-content glass-card" data-spotlight>
                 <h3 class="step-title">Strategy</h3>
-                <p class="step-text">Sitemap creation, information architecture design, wireframes, and strategic user pathway layouts mapping to conversions.</p>
+                <p class="step-text">We create a sitemap, wireframes, and plan the user journey to organize information effectively.</p>
                 <span class="step-duration">Week 2</span>
               </div>
             </div>
@@ -544,7 +565,7 @@
               </div>
               <div class="step-content glass-card" data-spotlight>
                 <h3 class="step-title">Design</h3>
-                <p class="step-text">Bespoke UI designs created in Figma using interactive high-fidelity pages. Fully approved before any coding starts.</p>
+                <p class="step-text">We create beautiful designs that align with your brand. You provide feedback before development.</p>
                 <span class="step-duration">Weeks 3-4</span>
               </div>
             </div>
@@ -556,7 +577,7 @@
               </div>
               <div class="step-content glass-card" data-spotlight>
                 <h3 class="step-title">Development</h3>
-                <p class="step-text">Coding clean, responsive HTML/CSS/JS or server systems. Zero template code. 100% hand-crafted engineering.</p>
+                <p class="step-text">We code the website using clean, modern code. No templates—everything is custom built.</p>
                 <span class="step-duration">Weeks 5-6</span>
               </div>
             </div>
@@ -567,8 +588,8 @@
                 <span class="step-num">05</span>
               </div>
               <div class="step-content glass-card" data-spotlight>
-                <h3 class="step-title">Launch</h3>
-                <p class="step-text">Rigorous visual QA testing, technical SEO config, speed indexing audits, and domain mapping live launch.</p>
+                <h3 class="step-title">Testing & Launch</h3>
+                <p class="step-text">We test everything thoroughly, optimize for performance, and get your website live.</p>
                 <span class="step-duration">Week 7</span>
               </div>
             </div>
@@ -580,8 +601,8 @@
               </div>
               <div class="step-content glass-card" data-spotlight>
                 <h3 class="step-title">Support</h3>
-                <p class="step-text">Post-launch analysis, ongoing speed reviews, monthly visual updates, and scalable optimization adjustments.</p>
-                <span class="step-duration">Continuous</span>
+                <p class="step-text">We're here to help with updates, fixes, and improvements after your site goes live.</p>
+                <span class="step-duration">Ongoing</span>
               </div>
             </div>
           </div>
@@ -589,26 +610,26 @@
       </div>
     </section>
 
-    <!-- 6. Why Choose NikvoraStudio -->
+    <!-- Why Choose Section -->
     <section class="why-choose-section" id="why-choose-us">
       <div class="container">
         <div class="section-header text-center">
-          <span class="section-subtitle">The Difference</span>
-          <h2 class="section-title">Built for Performance</h2>
-          <p class="section-desc">Why premium brands and growth startups partner with NikvoraStudio to create their web presence.</p>
+          <span class="section-subtitle">Why Us</span>
+          <h2 class="section-title">Why Choose NikvoraStudio</h2>
+          <p class="section-desc">We're committed to creating websites that look professional, work smoothly, and help your business grow.</p>
         </div>
 
         <div class="bento-grid">
           <!-- Box 1 -->
           <div class="bento-box bento-large reveal glass-card" data-spotlight>
             <div class="bento-icon">
-              <svg viewBox="0 0 24 24" fill="none" stroke="#4F7CFF" stroke-width="1.5">
+              <svg viewBox="0 0 24 24" fill="none" stroke="#4F7CFF" stroke-width="1.5" aria-hidden="true">
                 <polygon points="12 2 2 7 12 12 22 7 12 2"></polygon>
                 <polyline points="2 17 12 22 22 17"></polyline>
               </svg>
             </div>
-            <h3 class="bento-title">Premium User Interface</h3>
-            <p class="bento-text">Every block, interaction, and hover effect is custom designed for visual excellence. We avoid standard cookie-cutter grids to give your brand a distinct high-end luxury startup aesthetic.</p>
+            <h3 class="bento-title">Custom Design</h3>
+            <p class="bento-text">Every website is designed specifically for your brand. No templates or cookie-cutter solutions—your site is unique.</p>
             <div class="bento-visual-ui">
               <span class="ui-dot"></span>
               <span class="ui-line"></span>
@@ -619,170 +640,170 @@
           <!-- Box 2 -->
           <div class="bento-box reveal glass-card" data-spotlight>
             <div class="bento-icon">
-              <svg viewBox="0 0 24 24" fill="none" stroke="#10B981" stroke-width="1.5">
+              <svg viewBox="0 0 24 24" fill="none" stroke="#10B981" stroke-width="1.5" aria-hidden="true">
                 <circle cx="12" cy="12" r="10"></circle>
                 <polyline points="12 6 12 12 14 14"></polyline>
               </svg>
             </div>
-            <h3 class="bento-title">Fast Delivery</h3>
-            <p class="bento-text">We launch within set timelines by working in weekly design sprints. Zero lag.</p>
+            <h3 class="bento-title">Timely Delivery</h3>
+            <p class="bento-text">We work efficiently to meet project timelines without compromising quality.</p>
           </div>
 
           <!-- Box 3 -->
           <div class="bento-box reveal glass-card" data-spotlight>
             <div class="bento-icon">
-              <svg viewBox="0 0 24 24" fill="none" stroke="#4F7CFF" stroke-width="1.5">
+              <svg viewBox="0 0 24 24" fill="none" stroke="#4F7CFF" stroke-width="1.5" aria-hidden="true">
                 <path d="M21 15a2 2 0 0 1-2 2H7l-4 4V5a2 2 0 0 1 2-2h14a2 2 0 0 1 2 2z"></path>
               </svg>
             </div>
-            <h3 class="bento-title">Unlimited Communication</h3>
-            <p class="bento-text">Access a dedicated Slack channel directly with your lead developer. Updates in real time.</p>
+            <h3 class="bento-title">Good Communication</h3>
+            <p class="bento-text">We keep you updated throughout the project and are responsive to your questions and feedback.</p>
           </div>
 
           <!-- Box 4 -->
           <div class="bento-box reveal glass-card" data-spotlight>
             <div class="bento-icon">
-              <svg viewBox="0 0 24 24" fill="none" stroke="#4F7CFF" stroke-width="1.5">
+              <svg viewBox="0 0 24 24" fill="none" stroke="#4F7CFF" stroke-width="1.5" aria-hidden="true">
                 <rect x="4" y="4" width="16" height="16" rx="2" ry="2"></rect>
                 <rect x="9" y="9" width="6" height="6"></rect>
               </svg>
             </div>
             <h3 class="bento-title">Responsive Design</h3>
-            <p class="bento-text">Fully fluid layouts that feel like native apps on mobile devices, loading instantly.</p>
+            <p class="bento-text">Your website will work perfectly on all devices—phones, tablets, and desktops.</p>
           </div>
 
           <!-- Box 5 -->
           <div class="bento-box bento-medium reveal glass-card" data-spotlight>
             <div class="bento-icon">
-              <svg viewBox="0 0 24 24" fill="none" stroke="#10B981" stroke-width="1.5">
+              <svg viewBox="0 0 24 24" fill="none" stroke="#10B981" stroke-width="1.5" aria-hidden="true">
                 <path d="M12 2v20M17 5H9.5a3.5 3.5 0 0 0 0 7h5a3.5 3.5 0 0 1 0 7H6"></path>
               </svg>
             </div>
-            <h3 class="bento-title">Focused on Business Growth</h3>
-            <p class="bento-text">We don't just design for beauty—we study customer metrics, user psychology, and CTA placements. Our main goal is to convert your site traffic into direct revenue.</p>
+            <h3 class="bento-title">Business-Focused</h3>
+            <p class="bento-text">We design with your business goals in mind—converting visitors into customers is our priority.</p>
           </div>
 
           <!-- Box 6 -->
           <div class="bento-box reveal glass-card" data-spotlight>
             <div class="bento-icon">
-              <svg viewBox="0 0 24 24" fill="none" stroke="#4F7CFF" stroke-width="1.5">
+              <svg viewBox="0 0 24 24" fill="none" stroke="#4F7CFF" stroke-width="1.5" aria-hidden="true">
                 <polyline points="16 18 22 12 16 6"></polyline>
                 <polyline points="8 6 2 12 8 18"></polyline>
               </svg>
             </div>
             <h3 class="bento-title">Clean Code</h3>
-            <p class="bento-text">Hand-written system code. No bloated page-builders like WordPress or Elementor.</p>
+            <p class="bento-text">We write hand-coded websites with best practices, no heavy page builders or bloated frameworks.</p>
           </div>
         </div>
       </div>
     </section>
 
-    <!-- 7. Why Choose NikvoraStudio Section -->
+    <!-- Features Section -->
     <section class="why-choose-features-section" id="why-choose-features">
       <div class="container">
         <div class="section-header text-center">
-          <span class="section-subtitle">Features</span>
-          <h2 class="section-title">Why Choose NikvoraStudio</h2>
-          <p class="section-desc">Every website is built with one goal: helping businesses look professional and convert more visitors into customers.</p>
+          <span class="section-subtitle">What You Get</span>
+          <h2 class="section-title">Key Features</h2>
+          <p class="section-desc">Every website comes with the features you need to succeed online.</p>
         </div>
 
         <div class="features-grid">
-          <!-- Card 1 -->
+          <!-- Feature 1 -->
           <div class="glass-card feature-card reveal" data-spotlight>
             <div class="feature-icon">
-              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" aria-hidden="true">
                 <polygon points="12 2 2 7 12 12 22 7 12 2"></polygon>
                 <polyline points="2 17 12 22 22 17"></polyline>
                 <polyline points="2 12 12 17 22 12"></polyline>
               </svg>
             </div>
-            <h3 class="feature-title">Modern Premium Design</h3>
-            <p class="feature-desc-text">Clean, high-end interfaces that build trust from the first impression.</p>
+            <h3 class="feature-title">Professional Design</h3>
+            <p class="feature-desc-text">Clean, modern interfaces that look great and build trust with your customers.</p>
           </div>
 
-          <!-- Card 2 -->
+          <!-- Feature 2 -->
           <div class="glass-card feature-card reveal" data-spotlight>
             <div class="feature-icon">
-              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" aria-hidden="true">
                 <rect x="5" y="2" width="14" height="20" rx="2" ry="2"></rect>
                 <line x1="12" y1="18" x2="12.01" y2="18"></line>
               </svg>
             </div>
-            <h3 class="feature-title">Mobile-First Experience</h3>
-            <p class="feature-desc-text">Every website is optimized for phones, tablets, and desktops.</p>
+            <h3 class="feature-title">Mobile Responsive</h3>
+            <p class="feature-desc-text">Perfect experience on phones, tablets, and computers—your visitors can use any device.</p>
           </div>
 
-          <!-- Card 3 -->
+          <!-- Feature 3 -->
           <div class="glass-card feature-card reveal" data-spotlight>
             <div class="feature-icon">
-              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" aria-hidden="true">
                 <path d="M13 2L3 14h9l-1 8 10-12h-9l1-8z"></path>
               </svg>
             </div>
-            <h3 class="feature-title">Fast Performance</h3>
-            <p class="feature-desc-text">Lightweight, optimized websites that load quickly and improve user experience.</p>
+            <h3 class="feature-title">Fast Loading</h3>
+            <p class="feature-desc-text">Optimized for speed so visitors don't wait and search engines rank you higher.</p>
           </div>
 
-          <!-- Card 4 -->
+          <!-- Feature 4 -->
           <div class="glass-card feature-card reveal" data-spotlight>
             <div class="feature-icon">
-              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" aria-hidden="true">
                 <circle cx="11" cy="11" r="8"></circle>
                 <line x1="21" y1="21" x2="16.65" y2="16.65"></line>
               </svg>
             </div>
-            <h3 class="feature-title">SEO-Ready Foundation</h3>
-            <p class="feature-desc-text">Proper semantic structure, metadata, and performance best practices for better search visibility.</p>
+            <h3 class="feature-title">SEO Built-In</h3>
+            <p class="feature-desc-text">Proper structure and tags help your website rank in search results for your target customers.</p>
           </div>
 
-          <!-- Card 5 -->
+          <!-- Feature 5 -->
           <div class="glass-card feature-card reveal" data-spotlight>
             <div class="feature-icon">
-              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" aria-hidden="true">
                 <line x1="18" y1="20" x2="18" y2="10"></line>
                 <line x1="12" y1="20" x2="12" y2="4"></line>
                 <line x1="6" y1="20" x2="6" y2="14"></line>
               </svg>
             </div>
-            <h3 class="feature-title">Conversion-Focused Layout</h3>
-            <p class="feature-desc-text">Strategic CTAs, clear messaging, and layouts designed to generate more enquiries.</p>
+            <h3 class="feature-title">Lead Generation</h3>
+            <p class="feature-desc-text">Strategic design with clear calls-to-action to help you attract more inquiries and customers.</p>
           </div>
 
-          <!-- Card 6 -->
+          <!-- Feature 6 -->
           <div class="glass-card feature-card reveal" data-spotlight>
             <div class="feature-icon">
-              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" aria-hidden="true">
                 <path d="M14.7 6.3a1 1 0 0 0 0 1.4l1.6 1.6a1 1 0 0 0 1.4 0l3.77-3.77a6 6 0 0 1-7.94 7.94l-6.91 6.91a2.12 2.12 0 0 1-3-3l6.91-6.91a6 6 0 0 1 7.94-7.94l-3.76 3.76z"></path>
               </svg>
             </div>
             <h3 class="feature-title">Ongoing Support</h3>
-            <p class="feature-desc-text">Assistance after launch for updates, fixes, and improvements.</p>
+            <p class="feature-desc-text">After launch, we're available to help with updates, improvements, and technical issues.</p>
           </div>
         </div>
       </div>
     </section>
 
-    <!-- 8. FAQ Section -->
+    <!-- FAQ Section -->
     <section class="faq-section" id="faq">
       <div class="container">
         <div class="section-header text-center">
-          <span class="section-subtitle">FAQ</span>
+          <span class="section-subtitle">Questions?</span>
           <h2 class="section-title">Frequently Asked Questions</h2>
-          <p class="section-desc">Clear answers to common questions about working with NikvoraStudio.</p>
+          <p class="section-desc">Answers to common questions about working with us.</p>
         </div>
 
         <div class="faq-accordion-container">
           <!-- FAQ 1 -->
           <div class="faq-item reveal">
             <button class="faq-trigger" aria-expanded="false">
-              <span class="faq-question">How much does a custom agency website cost?</span>
+              <span class="faq-question">How much does a website cost?</span>
               <span class="faq-icon">
-                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><line x1="12" y1="5" x2="12" y2="19"></line><line x1="5" y1="12" x2="19" y2="12"></line></svg>
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><line x1="12" y1="5" x2="12" y2="19"></line><line x1="5" y1="12" x2="19" y2="12"></line></svg>
               </span>
             </button>
             <div class="faq-content">
               <div class="faq-content-inner">
-                <p>Every website we build is custom-designed and hand-coded from scratch. Our project rates generally range from $5,000 to $15,000 depending on complexity, page count, and integrations. We provide an exact, fixed quote after our discovery call.</p>
+                <p>Website pricing depends on your specific needs, including design complexity, number of pages, and any special features like booking systems or integrations. We offer custom quotes based on your project requirements. Contact us for a free consultation to discuss your budget and needs.</p>
               </div>
             </div>
           </div>
@@ -790,14 +811,14 @@
           <!-- FAQ 2 -->
           <div class="faq-item reveal">
             <button class="faq-trigger" aria-expanded="false">
-              <span class="faq-question">How long does the design and development process take?</span>
+              <span class="faq-question">How long does it take to build a website?</span>
               <span class="faq-icon">
-                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><line x1="12" y1="5" x2="12" y2="19"></line><line x1="5" y1="12" x2="19" y2="12"></line></svg>
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><line x1="12" y1="5" x2="12" y2="19"></line><line x1="5" y1="12" x2="19" y2="12"></line></svg>
               </span>
             </button>
             <div class="faq-content">
               <div class="faq-content-inner">
-                <p>A standard custom website takes about 5 to 7 weeks from discovery session to live launch. Complex systems with custom API setups or automation dashboards may take up to 8 to 10 weeks. We define weekly deliverables to keep you in the loop.</p>
+                <p>A typical custom website takes 6-8 weeks from start to finish, including discovery, design, development, and testing. Simple projects may take less time, while more complex sites with special features might take longer. We'll provide a clear timeline for your specific project.</p>
               </div>
             </div>
           </div>
@@ -805,14 +826,14 @@
           <!-- FAQ 3 -->
           <div class="faq-item reveal">
             <button class="faq-trigger" aria-expanded="false">
-              <span class="faq-question">What is your revision policy?</span>
+              <span class="faq-question">Can you redesign my existing website?</span>
               <span class="faq-icon">
-                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><line x1="12" y1="5" x2="12" y2="19"></line><line x1="5" y1="12" x2="19" y2="12"></line></svg>
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><line x1="12" y1="5" x2="12" y2="19"></line><line x1="5" y1="12" x2="19" y2="12"></line></svg>
               </span>
             </button>
             <div class="faq-content">
               <div class="faq-content-inner">
-                <p>We provide unlimited design revisions within the Figma design stage. We believe in collaborative feedback and only move to development once you are 100% in love with the layout mockup. Post-launch code adjustments are covered in our maintenance agreements.</p>
+                <p>Absolutely! We can redesign your existing website while preserving your SEO rankings. We'll modernize the design, improve the user experience, and optimize performance. This is a great option if your current site needs a refresh but you want to keep your search engine visibility.</p>
               </div>
             </div>
           </div>
@@ -820,14 +841,14 @@
           <!-- FAQ 4 -->
           <div class="faq-item reveal">
             <button class="faq-trigger" aria-expanded="false">
-              <span class="faq-question">Do you handle hosting and domain migration?</span>
+              <span class="faq-question">Do you provide hosting and domain services?</span>
               <span class="faq-icon">
-                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><line x1="12" y1="5" x2="12" y2="19"></line><line x1="5" y1="12" x2="19" y2="12"></line></svg>
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><line x1="12" y1="5" x2="12" y2="19"></line><line x1="5" y1="12" x2="19" y2="12"></line></svg>
               </span>
             </button>
             <div class="faq-content">
               <div class="faq-content-inner">
-                <p>Yes. We deploy websites using ultra-fast content delivery networks (Netlify, Vercel, or AWS Edge hosting) and handle all domain pointer migrations, SSL configurations, and caching setups for you.</p>
+                <p>We can help you set up hosting and manage domain configurations. We deploy websites on reliable hosting providers and ensure everything is properly configured for security and performance. We can also assist with domain registration if needed.</p>
               </div>
             </div>
           </div>
@@ -835,14 +856,14 @@
           <!-- FAQ 5 -->
           <div class="faq-item reveal">
             <button class="faq-trigger" aria-expanded="false">
-              <span class="faq-question">Do you offer post-launch support and updates?</span>
+              <span class="faq-question">What kind of support do you offer after launch?</span>
               <span class="faq-icon">
-                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><line x1="12" y1="5" x2="12" y2="19"></line><line x1="5" y1="12" x2="19" y2="12"></line></svg>
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><line x1="12" y1="5" x2="12" y2="19"></line><line x1="5" y1="12" x2="19" y2="12"></line></svg>
               </span>
             </button>
             <div class="faq-content">
               <div class="faq-content-inner">
-                <p>Yes. We offer recurring monthly support packages that cover server health, security upgrades, SEO reports, and 2-4 hours of content changes. You are never left without developer access.</p>
+                <p>We offer maintenance packages that include security updates, performance monitoring, and technical support. We can also help with content updates and improvements. Support options can be discussed based on your needs after your website launches.</p>
               </div>
             </div>
           </div>
@@ -850,17 +871,17 @@
       </div>
     </section>
 
-    <!-- 9. Final CTA Section -->
+    <!-- Final CTA Section -->
     <section class="cta-section" id="contact">
       <div class="cta-glow"></div>
       <div class="container text-center">
-        <h2 class="cta-title reveal">Let's Build a Website That Makes Your Business Stand Out.</h2>
-        <p class="cta-subtitle reveal">Whether you're starting from scratch or refreshing an outdated website, we'll create a fast, modern website that represents your business professionally and helps turn visitors into customers.</p>
+        <h2 class="cta-title reveal">Ready to Build Your Website?</h2>
+        <p class="cta-subtitle reveal">Let's discuss your project and create a website that helps your business succeed online.</p>
         
         <div class="cta-booking-wrapper reveal">
-          <a href="https://calendly.com" target="_blank" rel="noopener" class="btn btn-primary btn-xl" id="finalCtaBtn">
-            Get a Free Consultation
-            <svg class="btn-arrow" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+          <a href="https://wa.me/916398490818?text=Hi%20NikvoraStudio,%20I'd%20like%20to%20discuss%20my%20website%20project%20and%20get%20started." target="_blank" rel="noopener noreferrer" class="btn btn-primary btn-xl" id="finalCtaBtn" title="Contact us on WhatsApp">
+            Get in Touch
+            <svg class="btn-arrow" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true">
               <line x1="5" y1="12" x2="19" y2="12"></line>
               <polyline points="12 5 19 12 12 19"></polyline>
             </svg>
@@ -868,80 +889,83 @@
         </div>
         
         <div class="cta-footer-stats reveal">
-          <span>✓ Free Strategy Audit</span>
-          <span>✓ No Commitments</span>
-          <span>✓ Slack Connect Post-Call</span>
+          <span>✓ Free Consultation</span>
+          <span>✓ No Obligation</span>
+          <span>✓ Quick Response</span>
         </div>
       </div>
     </section>
   </main>
 
-  <!-- 10. Footer Section -->
+  <!-- Footer -->
   <footer class="main-footer">
     <div class="container footer-container">
       <div class="footer-brand">
-        <a href="#" class="logo">
+        <a href="#hero" class="logo" title="Back to top">
           <img src="/src/assets/logo.jpg" alt="NikvoraStudio Logo" class="logo-img">
           Nikvora<span class="logo-accent">Studio</span>
         </a>
-        <p class="footer-desc">Crafting premium digital platforms for businesses that refuse to look average. Let's make your brand unforgettable.</p>
-
+        <p class="footer-desc">We create professional websites that help businesses succeed online. Modern design, clean code, and dedicated support.</p>
       </div>
 
       <div class="footer-nav-col">
-        <h4 class="footer-lbl">Studio</h4>
+        <h4 class="footer-lbl">Services</h4>
         <ul>
-          <li><a href="#work">Demo Projects</a></li>
-          <li><a href="#services">Our Services</a></li>
-          <li><a href="#process">The Method</a></li>
-          <li><a href="#why-choose-us">Performance</a></li>
+          <li><a href="#work" title="View our portfolio">Portfolio</a></li>
+          <li><a href="#services" title="View our services">Services</a></li>
+          <li><a href="#process" title="Learn our process">Process</a></li>
+          <li><a href="#why-choose-us" title="Why choose us">Why Us</a></li>
         </ul>
       </div>
 
       <div class="footer-nav-col">
         <h4 class="footer-lbl">Resources</h4>
         <ul>
-          <li><a href="#faq">FAQ</a></li>
-          <li><a href="#contact">Book a Call</a></li>
+          <li><a href="#faq" title="Frequently asked questions">FAQ</a></li>
+          <li><a href="#contact" title="Contact us">Contact</a></li>
         </ul>
       </div>
 
       <div class="footer-nav-col">
-        <h4 class="footer-lbl">Connect</h4>
+        <h4 class="footer-lbl">Get In Touch</h4>
         <ul>
           <li>
-  <a href="mailto:nikvorastudio@gmail.com" class="footer-contact-link">
-    nikvorastudio@gmail.com
-  </a>
-</li>
+            <a href="mailto:nikvorastudio@gmail.com" class="footer-contact-link" title="Send us an email">
+              📧 nikvorastudio@gmail.com
+            </a>
+          </li>
+          <li>
+            <a href="https://wa.me/916398490818?text=Hi%20NikvoraStudio,%20I'm%20interested%20in%20your%20web%20design%20services." target="_blank" rel="noopener noreferrer" class="footer-contact-link" title="Contact us on WhatsApp">
+              💬 +91 6398490818
+            </a>
+          </li>
+          <li>
+            <a href="https://instagram.com/nikvorastudio" target="_blank" rel="noopener noreferrer" class="footer-social-link" title="Follow us on Instagram">
+              Instagram
+            </a>
+          </li>
+          <li>
+            <a href="https://www.linkedin.com/in/nikvorastudio-agency-632345422" target="_blank" rel="noopener noreferrer" class="footer-social-link" title="Connect on LinkedIn">
+              LinkedIn
+            </a>
+          </li>
+          <li>
+            <a href="https://www.facebook.com/profile.php?id=61591171545148" target="_blank" rel="noopener noreferrer" class="footer-social-link" title="Follow us on Facebook">
+              Facebook
+            </a>
+          </li>
+          <li>
+            <a href="https://github.com/nikhilrawatdev" target="_blank" rel="noopener noreferrer" class="footer-social-link" title="View our GitHub profile">
+              GitHub
+            </a>
+          </li>
+        </ul>
+      </div>
+    </div>
 
-<li>
-  <a href="https://wa.me/916398490818?text=Hi%20NikvoraStudio,%20I'm%20interested%20in%20getting%20a%20website%20for%20my%20business." target="_blank" rel="noopener" class="footer-contact-link">
-    WhatsApp
-  </a>
-</li>
-
-<li>
-  <a href="https://instagram.com/nikvorastudio" target="_blank" rel="noopener" class="footer-social-link">
-    Instagram
-  </a>
-</li>
-
-<li>
-  <a href="https://www.linkedin.com/in/nikvorastudio" target="_blank" rel="noopener" class="footer-social-link">
-    LinkedIn
-  </a>
-</li>
-
-<li>
-  <a href="https://www.facebook.com/share/16WnprmRJq/" target="_blank" rel="noopener" class="footer-social-link">
-    Facebook
-  </a>
-</li>   
     <div class="container footer-bottom">
-      <span class="copyright">&copy; 2026 NikvoraStudio. All rights reserved. Designed for Premium Conversion.</span>
-
-      <span class="terms-link"><a href="#terms">Privacy & Terms</a></span>
+      <span class="copyright">&copy; 2026 NikvoraStudio. All rights reserved.</span>
+      <span class="terms-link"><a href="#privacy" title="Privacy and terms">Privacy & Terms</a></span>
     </div>
   </footer>
 
