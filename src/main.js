@@ -1,5 +1,5 @@
 /* ==========================================================================
-   NikvoraStudio - Custom Interactive Core Engine
+   NikvoraStudio - Custom Interactive Core Engine (Security Hardened)
    ========================================================================== */
 
 document.addEventListener('DOMContentLoaded', () => {
@@ -30,8 +30,9 @@ function initCustomCursor() {
 
   // Track actual mouse coordinates
   window.addEventListener('mousemove', (e) => {
-    mouseX = e.clientX;
-    mouseY = e.clientY;
+    // Validate coordinates to prevent injection
+    mouseX = Math.max(0, Math.min(e.clientX, window.innerWidth));
+    mouseY = Math.max(0, Math.min(e.clientY, window.innerHeight));
   });
 
   // Animation loop with lag/inertia
@@ -82,11 +83,11 @@ function initHeaderScroll() {
 
     // Update top scroll progress bar indicator
     const totalScroll = document.documentElement.scrollHeight - window.innerHeight;
-    if (totalScroll > 0) {
+    if (totalScroll > 0 && scrollProgress) {
       const percentage = (window.scrollY / totalScroll) * 100;
-      if (scrollProgress) {
-        scrollProgress.style.width = `${percentage}%`;
-      }
+      // Clamp percentage to valid range
+      const clampedPercentage = Math.max(0, Math.min(100, percentage));
+      scrollProgress.style.width = `${clampedPercentage}%`;
     }
   });
 }
@@ -122,8 +123,9 @@ function initGlassSpotlight() {
   cards.forEach(card => {
     card.addEventListener('mousemove', (e) => {
       const rect = card.getBoundingClientRect();
-      const x = e.clientX - rect.left;
-      const y = e.clientY - rect.top;
+      // Validate and clamp coordinates
+      const x = Math.max(0, Math.min(e.clientX - rect.left, rect.width));
+      const y = Math.max(0, Math.min(e.clientY - rect.top, rect.height));
 
       card.style.setProperty('--mouse-x', `${x}px`);
       card.style.setProperty('--mouse-y', `${y}px`);
@@ -134,6 +136,14 @@ function initGlassSpotlight() {
 /* --- 5. Scroll Reveal Intersection Observer --- */
 function initScrollReveal() {
   const revealElements = document.querySelectorAll('.reveal');
+
+  if (!('IntersectionObserver' in window)) {
+    // Fallback for browsers without IntersectionObserver
+    revealElements.forEach(el => {
+      el.classList.add('reveal-visible');
+    });
+    return;
+  }
 
   const observer = new IntersectionObserver((entries) => {
     entries.forEach(entry => {
@@ -173,7 +183,7 @@ function initProcessTimeline() {
       progressLine.style.height = `${percent}%`;
 
       // Activate corresponding steps as the line reaches them
-      steps.forEach((step, idx) => {
+      steps.forEach((step) => {
         const stepRect = step.getBoundingClientRect();
         if (stepRect.top < triggerLine) {
           step.classList.add('active-step');
@@ -226,14 +236,18 @@ function initFaqAccordion() {
   });
 }
 
-/* --- 8. Smooth Scrolling Anchor Links Helper --- */
+/* --- 8. Smooth Scrolling Anchor Links Helper (Secure) --- */
 function initSmoothScrollLinks() {
   const links = document.querySelectorAll('a[href^="#"]');
 
   links.forEach(link => {
     link.addEventListener('click', (e) => {
       const targetId = link.getAttribute('href');
-      if (targetId === '#' || !targetId) return;
+      
+      // Validate target ID - prevent XSS through href manipulation
+      if (!targetId || targetId === '#' || !/^#[a-zA-Z0-9_-]+$/.test(targetId)) {
+        return;
+      }
       
       const targetEl = document.querySelector(targetId);
       if (targetEl) {
@@ -245,7 +259,7 @@ function initSmoothScrollLinks() {
         const offsetPosition = elementPosition + window.pageYOffset - headerOffset;
 
         window.scrollTo({
-          top: offsetPosition,
+          top: Math.max(0, offsetPosition), // Ensure non-negative value
           behavior: 'smooth'
         });
       }

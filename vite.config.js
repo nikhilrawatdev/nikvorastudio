@@ -15,11 +15,11 @@ export default defineConfig({
   server: {
     headers: {
       // Security headers for development
-      'Content-Security-Policy': "default-src 'self'; script-src 'self' 'unsafe-inline' 'unsafe-eval'; style-src 'self' 'unsafe-inline' https://fonts.googleapis.com https://fonts.gstatic.com; font-src 'self' https://fonts.googleapis.com https://fonts.gstatic.com data:; connect-src 'self' ws: wss: https:;",
+      'Content-Security-Policy': "default-src 'self'; script-src 'self' 'unsafe-inline' 'unsafe-eval'; style-src 'self' 'unsafe-inline' https://fonts.googleapis.com https://fonts.gstatic.com; font-src 'self' https://fonts.gstatic.com; img-src 'self' data: https:; connect-src 'self' https://wa.me",
       'X-Content-Type-Options': 'nosniff',
       'X-Frame-Options': 'DENY',
       'Referrer-Policy': 'strict-origin-when-cross-origin',
-      'Permissions-Policy': 'accelerometer=(), ambient-light-sensor=(), autoplay=(), camera=(), geolocation=(), gyroscope=(), magnetometer=(), microphone=(), payment=(), usb=()',
+      'Permissions-Policy': 'accelerometer=(), ambient-light-sensor=(), autoplay=(), camera=(), geolocation=(), gyroscope=(), magnetometer=(), microphone=(), payment=(), usb=(), vr=()',
     },
   },
 
@@ -34,8 +34,9 @@ export default defineConfig({
     minify: 'terser',
     terserOptions: {
       compress: {
-        drop_console: false, // Set to true in production to remove console logs
-        drop_debugger: true,
+        drop_console: true,  // Remove console logs in production
+        drop_debugger: true, // Remove debugger statements
+        pure_funcs: ['console.log', 'console.info', 'console.warn'],
       },
       mangle: true,
       output: {
@@ -46,7 +47,7 @@ export default defineConfig({
     // SECURITY: Rollup options for code splitting and optimization
     rollupOptions: {
       output: {
-        // Generate source maps only for development, not in production
+        // Disable source maps in production to prevent code exposure
         sourcemap: false,
         // Ensure all external dependencies are properly bundled
         globals: {},
@@ -60,7 +61,7 @@ export default defineConfig({
     // Ensure no unsafe inline scripts or styles are generated
     cssCodeSplit: true,
     
-    // Copy assets with proper versioning
+    // Copy assets with proper versioning for cache busting
     assetsInlineLimit: 4096,
   },
 
@@ -80,10 +81,8 @@ export default defineConfig({
           // For local builds, we generate one
           const nonce = process.env.VITE_CSP_NONCE || generateNonce();
           
-          // Note: The actual nonce injection is handled by Vercel
-          // This is for development/reference
-          console.log(`[CSP] Nonce generated: ${nonce.substring(0, 8)}...`);
-          
+          // Production builds: nonce is handled by Vercel
+          // No logging in production to avoid console pollution
           return html;
         },
       },
